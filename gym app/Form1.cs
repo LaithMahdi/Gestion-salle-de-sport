@@ -80,7 +80,14 @@ namespace gym_app
                 {
                     string name = reader["name"].ToString();
                     string role = reader["role"].ToString();
+
                     MessageBox.Show($"Bienvenue {name}, Role: {role}");
+
+                    // Navigate to Form2
+                    this.Hide(); 
+                    Form2 form2 = new Form2();
+                    form2.ShowDialog(); 
+                    this.Close(); 
                 }
                 else
                 {
@@ -94,6 +101,7 @@ namespace gym_app
                 MessageBox.Show("Erreur lors de la connexion: " + ex.Message);
             }
         }
+
 
     }
 }

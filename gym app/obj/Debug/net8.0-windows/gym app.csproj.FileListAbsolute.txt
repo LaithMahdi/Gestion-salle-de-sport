@@ -31,3 +31,5 @@ C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym app.pdb
 C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym app.genruntimeconfig.cache
 C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\ref\gym app.dll
 C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Properties.Resources.resources
+C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym app.sourcelink.json
+C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Form2.resources
