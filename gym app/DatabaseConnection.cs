@@ -35,5 +35,14 @@ namespace gym_app
         {
             return connection;
         }
+
+
+        public static void CloseConnection()
+        {
+            if (connection != null && connection.State == System.Data.ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
     }
 }

@@ -44,6 +44,14 @@ namespace gym_app
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Equipement equipement = new Equipement();
+            equipement.ShowDialog();
+            this.Close();
+        }
+
+        private void products_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -88,6 +88,7 @@
             textBox2.PlaceholderText = "********";
             textBox2.Size = new Size(265, 31);
             textBox2.TabIndex = 1;
+            textBox2.Text = "12345678";
             // 
             // textBox1
             // 
@@ -97,6 +98,7 @@
             textBox1.PlaceholderText = "user@example.com";
             textBox1.Size = new Size(265, 31);
             textBox1.TabIndex = 0;
+            textBox1.Text = "laith@gmail.com";
             // 
             // pictureBox2
             // 

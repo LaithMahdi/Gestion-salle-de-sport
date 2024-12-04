@@ -63,6 +63,16 @@ namespace gym_app.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap left_arrow_10117587 {
+            get {
+                object obj = ResourceManager.GetObject("left-arrow_10117587", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sport_family_bro {
             get {
                 object obj = ResourceManager.GetObject("Sport family-bro", resourceCulture);

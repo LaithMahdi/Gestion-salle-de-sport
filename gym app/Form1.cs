@@ -1,4 +1,5 @@
 
+using gym_app;
 using MySql.Data.MySqlClient;
 
 namespace gym_app
@@ -67,8 +68,9 @@ namespace gym_app
 
                 // Create the query
                 string query = "SELECT * FROM user WHERE email = @Email AND password = @Password";
-                MySqlCommand command = DatabaseConnection.CreateCommand(query);
-
+          
+                MySqlCommand command = DatabaseConnection.GetConnection().CreateCommand();
+                command.CommandText = query;
                 // Add parameters
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Password", password);

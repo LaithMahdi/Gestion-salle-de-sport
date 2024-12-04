@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\SBS\\Documents\\gym app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|c:\\users\\sbs\\documents\\gym app\\gym app\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|solutionrelative:gym app\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|c:\\users\\sbs\\documents\\gym app\\gym app\\equipement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|solutionrelative:gym app\\equipement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|c:\\users\\sbs\\documents\\gym app\\gym app\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|solutionrelative:gym app\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|c:\\users\\sbs\\documents\\gym app\\gym app\\equipement.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|solutionrelative:gym app\\equipement.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|c:\\users\\sbs\\documents\\gym app\\gym app\\equipement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|solutionrelative:gym app\\equipement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|c:\\users\\sbs\\documents\\gym app\\gym app\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|solutionrelative:gym app\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|c:\\users\\sbs\\documents\\gym app\\gym app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|solutionrelative:gym app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|c:\\users\\sbs\\documents\\gym app\\gym app\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|solutionrelative:gym app\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|c:\\users\\sbs\\documents\\gym app\\gym app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|solutionrelative:gym app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|c:\\users\\sbs\\documents\\gym app\\gym app\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D779DAF-3EBD-41F4-A265-1E12A343C547}|gym app\\gym app.csproj|solutionrelative:gym app\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,90 +34,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form2.cs",
-              "RelativeDocumentMoniker": "gym app\\Form2.cs",
-              "ToolTip": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form2.cs",
-              "RelativeToolTip": "gym app\\Form2.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAkwC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T22:47:27.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "gym app\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form1.Designer.cs",
-              "RelativeToolTip": "gym app\\Form1.Designer.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADgv4oAAAAFAAAAAAAAAA==",
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "gym app\\DatabaseConnection.cs",
+              "ToolTip": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\DatabaseConnection.cs",
+              "RelativeToolTip": "gym app\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T22:28:04.595Z",
+              "WhenOpened": "2024-12-04T20:31:07.825Z",
+              "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form2.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form2.cs",
-              "RelativeDocumentMoniker": "gym app\\Form2.cs",
-              "ToolTip": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form2.cs [Conception]",
-              "RelativeToolTip": "gym app\\Form2.cs [Conception]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T22:25:04.193Z",
-              "EditorCaption": " [Conception]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form1.cs",
+              "RelativeDocumentMoniker": "gym app\\Form1.cs",
+              "ToolTip": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form1.cs",
+              "RelativeToolTip": "gym app\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T20:54:31.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Equipement.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Equipement.Designer.cs",
+              "RelativeDocumentMoniker": "gym app\\Equipement.Designer.cs",
+              "ToolTip": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Equipement.Designer.cs",
+              "RelativeToolTip": "gym app\\Equipement.Designer.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAjwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T20:51:17.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form1.cs",
               "RelativeDocumentMoniker": "gym app\\Form1.cs",
               "ToolTip": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form1.cs [Conception]",
               "RelativeToolTip": "gym app\\Form1.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T22:20:53.575Z",
+              "WhenOpened": "2024-12-04T20:38:24.004Z",
               "EditorCaption": " [Conception]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form1.cs",
-              "RelativeDocumentMoniker": "gym app\\Form1.cs",
-              "ToolTip": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Form1.cs",
-              "RelativeToolTip": "gym app\\Form1.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwFkAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Equipement.cs",
+              "DocumentMoniker": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Equipement.cs",
+              "RelativeDocumentMoniker": "gym app\\Equipement.cs",
+              "ToolTip": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Equipement.cs",
+              "RelativeToolTip": "gym app\\Equipement.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T22:16:10.198Z",
+              "WhenOpened": "2024-12-04T20:18:14.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DatabaseConnection.cs",
-              "DocumentMoniker": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\DatabaseConnection.cs",
-              "RelativeDocumentMoniker": "gym app\\DatabaseConnection.cs",
-              "ToolTip": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\DatabaseConnection.cs",
-              "RelativeToolTip": "gym app\\DatabaseConnection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Equipement.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Equipement.cs",
+              "RelativeDocumentMoniker": "gym app\\Equipement.cs",
+              "ToolTip": "C:\\Users\\SBS\\Documents\\gym app\\gym app\\Equipement.cs [Conception]",
+              "RelativeToolTip": "gym app\\Equipement.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T22:16:09.131Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "WhenOpened": "2024-12-04T20:03:56.9Z",
+              "EditorCaption": " [Conception]"
             }
           ]
         }
