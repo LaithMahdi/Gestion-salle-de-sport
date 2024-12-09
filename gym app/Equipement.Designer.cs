@@ -29,83 +29,44 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            Id = new DataGridViewTextBoxColumn();
-            name = new DataGridViewTextBoxColumn();
-            description = new DataGridViewTextBoxColumn();
-            deliveryDate = new DataGridViewTextBoxColumn();
-            status = new DataGridViewTextBoxColumn();
-            category = new DataGridViewTextBoxColumn();
-            emplacement = new DataGridViewTextBoxColumn();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            id = new TextBox();
+            name = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            description = new TextBox();
             label4 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            deliveryDate = new DateTimePicker();
             label5 = new Label();
-            comboBox1 = new ComboBox();
+            category = new ComboBox();
             label6 = new Label();
             label7 = new Label();
-            comboBox2 = new ComboBox();
+            emplacement = new ComboBox();
             button1 = new Button();
-            button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            groupBox1 = new GroupBox();
+            status = new ComboBox();
+            text = new Label();
+            label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Id, name, description, deliveryDate, status, category, emplacement });
-            dataGridView1.Location = new Point(397, 112);
+            dataGridView1.Location = new Point(408, 76);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(627, 323);
+            dataGridView1.Size = new Size(627, 545);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // Id
-            // 
-            Id.HeaderText = "Id";
-            Id.Name = "Id";
-            // 
-            // name
-            // 
-            name.HeaderText = "Name";
-            name.Name = "name";
-            // 
-            // description
-            // 
-            description.HeaderText = "Description";
-            description.Name = "description";
-            // 
-            // deliveryDate
-            // 
-            deliveryDate.HeaderText = "Delivery Date";
-            deliveryDate.Name = "deliveryDate";
-            // 
-            // status
-            // 
-            status.HeaderText = "Status";
-            status.Name = "status";
-            // 
-            // category
-            // 
-            category.HeaderText = "Category";
-            category.Name = "category";
-            // 
-            // emplacement
-            // 
-            emplacement.HeaderText = "Emplacement";
-            emplacement.Name = "emplacement";
+            dataGridView1.CellClick += onCellClick;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Calibri", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(397, 34);
+            label1.Location = new Point(1790, -137);
             label1.Name = "label1";
             label1.Size = new Size(150, 33);
             label1.TabIndex = 1;
@@ -114,94 +75,96 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.White;
             label2.Font = new Font("Calibri", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(32, 72);
+            label2.Location = new Point(15, 19);
             label2.Name = "label2";
             label2.Size = new Size(24, 21);
             label2.TabIndex = 2;
             label2.Text = "Id";
             // 
-            // textBox1
+            // id
             // 
-            textBox1.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(32, 103);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "id";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(208, 27);
-            textBox1.TabIndex = 3;
+            id.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            id.Location = new Point(15, 50);
+            id.Name = "id";
+            id.PlaceholderText = "id";
+            id.ReadOnly = true;
+            id.Size = new Size(313, 27);
+            id.TabIndex = 3;
             // 
-            // textBox2
+            // name
             // 
-            textBox2.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(32, 171);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "name";
-            textBox2.Size = new Size(208, 27);
-            textBox2.TabIndex = 5;
+            name.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            name.Location = new Point(15, 118);
+            name.Name = "name";
+            name.PlaceholderText = "name";
+            name.Size = new Size(313, 27);
+            name.TabIndex = 5;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Calibri", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(32, 140);
+            label3.Location = new Point(15, 87);
             label3.Name = "label3";
             label3.Size = new Size(52, 21);
             label3.TabIndex = 4;
             label3.Text = "Name";
             // 
-            // textBox3
+            // description
             // 
-            textBox3.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(32, 239);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "description";
-            textBox3.Size = new Size(208, 27);
-            textBox3.TabIndex = 7;
+            description.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            description.Location = new Point(15, 186);
+            description.Name = "description";
+            description.PlaceholderText = "description";
+            description.Size = new Size(313, 27);
+            description.TabIndex = 7;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Calibri", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(32, 208);
+            label4.Location = new Point(15, 155);
             label4.Name = "label4";
             label4.Size = new Size(91, 21);
             label4.TabIndex = 6;
             label4.Text = "Description";
             // 
-            // dateTimePicker1
+            // deliveryDate
             // 
-            dateTimePicker1.CalendarFont = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(32, 307);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 8;
+            deliveryDate.CalendarFont = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            deliveryDate.Location = new Point(15, 254);
+            deliveryDate.Name = "deliveryDate";
+            deliveryDate.Size = new Size(305, 23);
+            deliveryDate.TabIndex = 8;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Calibri", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(32, 276);
+            label5.Location = new Point(15, 223);
             label5.Name = "label5";
             label5.Size = new Size(107, 21);
             label5.TabIndex = 9;
             label5.Text = "Delivery Date";
             // 
-            // comboBox1
+            // category
             // 
-            comboBox1.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Équipements de musculation", "Cardio-training", "Équipements pour les cours collectifs", "Équipements de fitness et d'entraînement" });
-            comboBox1.Location = new Point(32, 371);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(200, 27);
-            comboBox1.TabIndex = 10;
+            category.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            category.FormattingEnabled = true;
+            category.Items.AddRange(new object[] { "Équipements de musculation", "Cardio-training", "Équipements pour les cours collectifs", "Équipements de fitness et d'entraînement" });
+            category.Location = new Point(15, 318);
+            category.Name = "category";
+            category.Size = new Size(305, 27);
+            category.TabIndex = 10;
+            category.SelectedIndexChanged += category_SelectedIndexChanged;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Calibri", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(32, 340);
+            label6.Location = new Point(15, 287);
             label6.Name = "label6";
             label6.Size = new Size(73, 21);
             label6.TabIndex = 11;
@@ -211,95 +174,132 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Calibri", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(32, 408);
+            label7.Location = new Point(15, 355);
             label7.Name = "label7";
             label7.Size = new Size(107, 21);
             label7.TabIndex = 12;
             label7.Text = "Emplacement";
             // 
-            // comboBox2
+            // emplacement
             // 
-            comboBox2.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Salle de musculation", "Salle de cardio-training", "Salle de cours collectifs", "Salle de sports de combat ou arts martiaux", "Salle de sport fonctionnel" });
-            comboBox2.Location = new Point(32, 439);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(200, 27);
-            comboBox2.TabIndex = 13;
+            emplacement.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            emplacement.FormattingEnabled = true;
+            emplacement.Items.AddRange(new object[] { "Salle de musculation", "Salle de cardio-training", "Salle de cours collectifs", "Salle de sports de combat ou arts martiaux", "Salle de sport fonctionnel" });
+            emplacement.Location = new Point(15, 386);
+            emplacement.Name = "emplacement";
+            emplacement.Size = new Size(305, 27);
+            emplacement.TabIndex = 13;
             // 
             // button1
             // 
-            button1.BackColor = Color.Blue;
+            button1.BackColor = Color.Green;
             button1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(32, 492);
+            button1.Location = new Point(80, 496);
             button1.Name = "button1";
-            button1.Size = new Size(75, 35);
+            button1.Size = new Size(75, 34);
             button1.TabIndex = 14;
-            button1.Text = "Add";
+            button1.Text = "Create";
             button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Green;
-            button2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(123, 492);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 35);
-            button2.TabIndex = 15;
-            button2.Text = "Update";
-            button2.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button3
             // 
             button3.BackColor = Color.Red;
             button3.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(214, 492);
+            button3.Location = new Point(170, 496);
             button3.Name = "button3";
-            button3.Size = new Size(75, 35);
+            button3.Size = new Size(75, 34);
             button3.TabIndex = 16;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += buttonDelete_Click;
             // 
             // button4
             // 
             button4.BackgroundImage = Properties.Resources.left_arrow_10117587;
             button4.BackgroundImageLayout = ImageLayout.Stretch;
-            button4.Location = new Point(32, 12);
+            button4.Location = new Point(32, 17);
             button4.Name = "button4";
             button4.Size = new Size(43, 42);
             button4.TabIndex = 17;
             button4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(status);
+            groupBox1.Controls.Add(text);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(button3);
+            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(id);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(name);
+            groupBox1.Controls.Add(emplacement);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(description);
+            groupBox1.Controls.Add(deliveryDate);
+            groupBox1.Controls.Add(category);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Location = new Point(32, 76);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(350, 545);
+            groupBox1.TabIndex = 18;
+            groupBox1.TabStop = false;
+            // 
+            // status
+            // 
+            status.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            status.FormattingEnabled = true;
+            status.Items.AddRange(new object[] { "Non Disponible", "En Entretien", "Disponible" });
+            status.Location = new Point(15, 454);
+            status.Name = "status";
+            status.Size = new Size(305, 27);
+            status.TabIndex = 18;
+            // 
+            // text
+            // 
+            text.AutoSize = true;
+            text.Font = new Font("Calibri", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            text.Location = new Point(15, 423);
+            text.Name = "text";
+            text.Size = new Size(54, 21);
+            text.TabIndex = 17;
+            text.Text = "Status";
+            text.Click += label9_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(81, 25);
+            label8.Name = "label8";
+            label8.Size = new Size(117, 26);
+            label8.TabIndex = 19;
+            label8.Text = "Equipement";
             // 
             // Equipement
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1074, 590);
+            BackgroundImage = Properties.Resources.victor_freitas_KkYWWpurqbE_unsplash;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1098, 649);
+            Controls.Add(label8);
+            Controls.Add(groupBox1);
             Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(comboBox2);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(comboBox1);
-            Controls.Add(label5);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(textBox3);
-            Controls.Add(label4);
-            Controls.Add(textBox2);
-            Controls.Add(label3);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Name = "Equipement";
             Text = "Equipement";
+            Load += Equipement_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -307,32 +307,26 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Id;
-        private DataGridViewTextBoxColumn name;
-        private DataGridViewTextBoxColumn description;
-        private DataGridViewTextBoxColumn deliveryDate;
-        private DataGridViewTextBoxColumn status;
-        private DataGridViewTextBoxColumn category;
-        private DataGridViewTextBoxColumn emplacement;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox id;
+        private TextBox name;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox description;
         private Label label4;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker deliveryDate;
         private Label label5;
-        private ComboBox comboBox1;
+        private ComboBox category;
         private Label label6;
         private Label label7;
-        private ComboBox comboBox2;
+        private ComboBox emplacement;
         private Button button1;
-        private Button button2;
         private Button button3;
         private Button button4;
-
-
+        private GroupBox groupBox1;
+        private Label label8;
+        private ComboBox status;
+        private Label text;
     }
 
 

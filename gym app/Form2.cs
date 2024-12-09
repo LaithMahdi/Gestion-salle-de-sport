@@ -44,13 +44,26 @@ namespace gym_app
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             Equipement equipement = new Equipement();
             equipement.ShowDialog();
-            this.Close();
+            //this.Close();
         }
 
         private void products_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void onOpenPage(object sender, EventArgs e)
+        {
+            int w = Screen.PrimaryScreen.Bounds.Width;
+            int h = Screen.PrimaryScreen.Bounds.Height;
+            this.Location = new Point(0, 0);
+            this.Size = new Size(w, h);
+        }
+
+        private void cours_Click(object sender, EventArgs e)
         {
 
         }

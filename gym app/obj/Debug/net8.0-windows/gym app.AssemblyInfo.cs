@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gym app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8406956a256e9e27cd4fdc95e38dc54471bbacc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ff0e4e6b9a114df227640c1aef722ad3fb5fe3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("gym app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gym app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

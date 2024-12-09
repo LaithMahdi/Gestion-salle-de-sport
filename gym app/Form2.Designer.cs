@@ -36,6 +36,8 @@
             cours = new Button();
             products = new Button();
             equipements = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // members
@@ -43,9 +45,9 @@
             members.BackgroundImage = Properties.Resources.users_young_svgrepo_com;
             members.BackgroundImageLayout = ImageLayout.Stretch;
             members.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            members.Location = new Point(136, 62);
+            members.Location = new Point(580, 343);
             members.Name = "members";
-            members.Size = new Size(131, 133);
+            members.Size = new Size(148, 155);
             members.TabIndex = 10;
             members.Text = "Members";
             members.TextAlign = ContentAlignment.BottomCenter;
@@ -58,9 +60,9 @@
             coach.BackgroundImageLayout = ImageLayout.Stretch;
             coach.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             coach.ForeColor = Color.Black;
-            coach.Location = new Point(331, 62);
+            coach.Location = new Point(867, 343);
             coach.Name = "coach";
-            coach.Size = new Size(131, 133);
+            coach.Size = new Size(148, 155);
             coach.TabIndex = 11;
             coach.Text = "Coach";
             coach.TextAlign = ContentAlignment.BottomCenter;
@@ -73,13 +75,14 @@
             cours.BackgroundImageLayout = ImageLayout.Stretch;
             cours.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cours.ForeColor = Color.Black;
-            cours.Location = new Point(526, 62);
+            cours.Location = new Point(1157, 343);
             cours.Name = "cours";
-            cours.Size = new Size(131, 133);
+            cours.Size = new Size(148, 155);
             cours.TabIndex = 12;
             cours.Text = "Cours";
             cours.TextAlign = ContentAlignment.BottomCenter;
             cours.UseVisualStyleBackColor = true;
+            cours.Click += cours_Click;
             // 
             // products
             // 
@@ -87,9 +90,9 @@
             products.BackgroundImageLayout = ImageLayout.Stretch;
             products.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             products.ForeColor = Color.Black;
-            products.Location = new Point(417, 224);
+            products.Location = new Point(1010, 545);
             products.Name = "products";
-            products.Size = new Size(131, 133);
+            products.Size = new Size(148, 155);
             products.TabIndex = 13;
             products.Text = "Products";
             products.TextAlign = ContentAlignment.BottomCenter;
@@ -102,21 +105,35 @@
             equipements.BackgroundImageLayout = ImageLayout.Stretch;
             equipements.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             equipements.ForeColor = Color.Black;
-            equipements.Location = new Point(238, 224);
+            equipements.Location = new Point(719, 545);
             equipements.Name = "equipements";
-            equipements.Size = new Size(131, 133);
+            equipements.Size = new Size(148, 155);
             equipements.TabIndex = 14;
             equipements.Text = "Equipements";
             equipements.TextAlign = ContentAlignment.BottomCenter;
             equipements.UseVisualStyleBackColor = true;
             equipements.Click += button5_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.RosyBrown;
+            pictureBox1.BackgroundImage = Properties.Resources.logo_gym;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(38, 32);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(125, 114);
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = Properties.Resources.victor_freitas_KkYWWpurqbE_unsplash;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1904, 1041);
+            Controls.Add(pictureBox1);
             Controls.Add(equipements);
             Controls.Add(products);
             Controls.Add(cours);
@@ -124,6 +141,8 @@
             Controls.Add(members);
             Name = "Form2";
             Text = "Form2";
+            Load += onOpenPage;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -135,5 +154,6 @@
         private Button cours;
         private Button products;
         private Button equipements;
+        private PictureBox pictureBox1;
     }
 }

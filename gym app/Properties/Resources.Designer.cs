@@ -73,6 +73,16 @@ namespace gym_app.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_gym {
+            get {
+                object obj = ResourceManager.GetObject("logo_gym", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sport_family_bro {
             get {
                 object obj = ResourceManager.GetObject("Sport family-bro", resourceCulture);
@@ -86,6 +96,16 @@ namespace gym_app.Properties {
         internal static System.Drawing.Bitmap users_young_svgrepo_com {
             get {
                 object obj = ResourceManager.GetObject("users-young-svgrepo-com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap victor_freitas_KkYWWpurqbE_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("victor-freitas-KkYWWpurqbE-unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

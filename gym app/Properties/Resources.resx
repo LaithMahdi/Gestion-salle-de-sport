@@ -121,10 +121,16 @@
   <data name="Sport family-bro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sport family-bro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="victor-freitas-KkYWWpurqbE-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\victor-freitas-KkYWWpurqbE-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="users-young-svgrepo-com" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users-young-svgrepo-com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="left-arrow_10117587" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\left-arrow_10117587.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_gym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
