@@ -52,7 +52,7 @@
             members.Text = "Members";
             members.TextAlign = ContentAlignment.BottomCenter;
             members.UseVisualStyleBackColor = true;
-            members.Click += button1_Click;
+            members.Click += member_Click;
             // 
             // coach
             // 
@@ -67,7 +67,7 @@
             coach.Text = "Coach";
             coach.TextAlign = ContentAlignment.BottomCenter;
             coach.UseVisualStyleBackColor = true;
-            coach.Click += button2_Click;
+            coach.Click += coach_click;
             // 
             // cours
             // 

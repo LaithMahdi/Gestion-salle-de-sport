@@ -32,22 +32,22 @@ namespace gym_app
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void member_Click(object sender, EventArgs e)
         {
-
+            Membre membre = new Membre();
+            membre.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void coach_click(object sender, EventArgs e)
         {
-
+            Coach coach = new Coach();
+            coach.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //this.Hide();
             Equipement equipement = new Equipement();
             equipement.ShowDialog();
-            //this.Close();
         }
 
         private void products_Click(object sender, EventArgs e)

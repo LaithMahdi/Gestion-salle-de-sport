@@ -34,3 +34,5 @@ C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Properti
 C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym app.sourcelink.json
 C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Form2.resources
 C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Equipement.resources
+C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Coach.resources
+C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Membre.resources

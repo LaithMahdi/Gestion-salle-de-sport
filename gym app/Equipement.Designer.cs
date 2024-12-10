@@ -36,7 +36,6 @@
             label3 = new Label();
             description = new TextBox();
             label4 = new Label();
-            deliveryDate = new DateTimePicker();
             label5 = new Label();
             category = new ComboBox();
             label6 = new Label();
@@ -48,6 +47,7 @@
             groupBox1 = new GroupBox();
             status = new ComboBox();
             text = new Label();
+            deliveryDate = new DateTimePicker();
             label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
@@ -131,14 +131,6 @@
             label4.TabIndex = 6;
             label4.Text = "Description";
             // 
-            // deliveryDate
-            // 
-            deliveryDate.CalendarFont = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            deliveryDate.Location = new Point(15, 254);
-            deliveryDate.Name = "deliveryDate";
-            deliveryDate.Size = new Size(305, 23);
-            deliveryDate.TabIndex = 8;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -156,7 +148,7 @@
             category.Items.AddRange(new object[] { "Équipements de musculation", "Cardio-training", "Équipements pour les cours collectifs", "Équipements de fitness et d'entraînement" });
             category.Location = new Point(15, 318);
             category.Name = "category";
-            category.Size = new Size(305, 27);
+            category.Size = new Size(313, 27);
             category.TabIndex = 10;
             category.SelectedIndexChanged += category_SelectedIndexChanged;
             // 
@@ -187,7 +179,7 @@
             emplacement.Items.AddRange(new object[] { "Salle de musculation", "Salle de cardio-training", "Salle de cours collectifs", "Salle de sports de combat ou arts martiaux", "Salle de sport fonctionnel" });
             emplacement.Location = new Point(15, 386);
             emplacement.Name = "emplacement";
-            emplacement.Size = new Size(305, 27);
+            emplacement.Size = new Size(313, 27);
             emplacement.TabIndex = 13;
             // 
             // button1
@@ -257,7 +249,7 @@
             status.Items.AddRange(new object[] { "Non Disponible", "En Entretien", "Disponible" });
             status.Location = new Point(15, 454);
             status.Name = "status";
-            status.Size = new Size(305, 27);
+            status.Size = new Size(313, 27);
             status.TabIndex = 18;
             // 
             // text
@@ -270,6 +262,14 @@
             text.TabIndex = 17;
             text.Text = "Status";
             text.Click += label9_Click;
+            // 
+            // deliveryDate
+            // 
+            deliveryDate.CalendarFont = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            deliveryDate.Location = new Point(15, 254);
+            deliveryDate.Name = "deliveryDate";
+            deliveryDate.Size = new Size(313, 23);
+            deliveryDate.TabIndex = 8;
             // 
             // label8
             // 
@@ -314,7 +314,6 @@
         private Label label3;
         private TextBox description;
         private Label label4;
-        private DateTimePicker deliveryDate;
         private Label label5;
         private ComboBox category;
         private Label label6;
@@ -327,6 +326,7 @@
         private Label label8;
         private ComboBox status;
         private Label text;
+        private DateTimePicker deliveryDate;
     }
 
 

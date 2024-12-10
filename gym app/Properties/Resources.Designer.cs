@@ -83,9 +83,29 @@ namespace gym_app.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap meghan_holmes_buWcS7G1_28_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("meghan-holmes-buWcS7G1_28-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sport_family_bro {
             get {
                 object obj = ResourceManager.GetObject("Sport family-bro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sven_mieke_Lx_GDv7VA9M_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("sven-mieke-Lx_GDv7VA9M-unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
