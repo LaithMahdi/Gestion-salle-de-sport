@@ -118,8 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="victor-freitas-KkYWWpurqbE-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\victor-freitas-KkYWWpurqbE-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="geert-pieters-3RnkZpDqsEI-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geert-pieters-3RnkZpDqsEI-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ctrl-a-meal-replacement-03e4RajfFAE-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ctrl-a-meal-replacement-03e4RajfFAE-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="left-arrow_10117587" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\left-arrow_10117587.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,8 +130,14 @@
   <data name="meghan-holmes-buWcS7G1_28-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\meghan-holmes-buWcS7G1_28-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sven-mieke-Lx_GDv7VA9M-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sven-mieke-Lx_GDv7VA9M-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="users-young-svgrepo-com" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users-young-svgrepo-com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="victor-freitas-KkYWWpurqbE-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\victor-freitas-KkYWWpurqbE-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sport family-bro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sport family-bro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,7 +145,7 @@
   <data name="logo_gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_gym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sven-mieke-Lx_GDv7VA9M-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sven-mieke-Lx_GDv7VA9M-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sven-mieke-MsCgmHuirDo-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sven-mieke-MsCgmHuirDo-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

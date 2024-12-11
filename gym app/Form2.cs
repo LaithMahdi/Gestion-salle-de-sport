@@ -17,20 +17,6 @@ namespace gym_app
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void member_Click(object sender, EventArgs e)
         {
@@ -52,7 +38,8 @@ namespace gym_app
 
         private void products_Click(object sender, EventArgs e)
         {
-
+            Product product = new Product();
+            product.ShowDialog();
         }
 
         private void onOpenPage(object sender, EventArgs e)
@@ -65,7 +52,14 @@ namespace gym_app
 
         private void cours_Click(object sender, EventArgs e)
         {
+            Course course = new Course();
+            course.ShowDialog();
+        }
 
+        private void click_vente(object sender, EventArgs e)
+        {
+            Vente vente = new Vente();
+            vente.ShowDialog();
         }
     }
 }

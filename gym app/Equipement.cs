@@ -34,7 +34,7 @@ namespace gym_app
             }
         }
 
-      
+
         private void LoadDataIntoGridView()
         {
             using (MySqlConnection con = new MySqlConnection(DatabaseConfig.ConnectionString))
@@ -166,7 +166,7 @@ namespace gym_app
             if (result == DialogResult.Yes)
             {
                 DeleteEquipment(equipementID);
-                LoadDataIntoGridView(); 
+                LoadDataIntoGridView();
             }
         }
 
@@ -241,6 +241,9 @@ namespace gym_app
 
         }
 
-       
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

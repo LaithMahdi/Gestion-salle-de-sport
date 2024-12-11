@@ -37,6 +37,7 @@
             products = new Button();
             equipements = new Button();
             pictureBox1 = new PictureBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -90,7 +91,7 @@
             products.BackgroundImageLayout = ImageLayout.Stretch;
             products.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             products.ForeColor = Color.Black;
-            products.Location = new Point(1010, 545);
+            products.Location = new Point(867, 545);
             products.Name = "products";
             products.Size = new Size(148, 155);
             products.TabIndex = 13;
@@ -105,7 +106,7 @@
             equipements.BackgroundImageLayout = ImageLayout.Stretch;
             equipements.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             equipements.ForeColor = Color.Black;
-            equipements.Location = new Point(719, 545);
+            equipements.Location = new Point(580, 545);
             equipements.Name = "equipements";
             equipements.Size = new Size(148, 155);
             equipements.TabIndex = 14;
@@ -125,6 +126,21 @@
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Font = new Font("Calibri", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(1157, 545);
+            button1.Name = "button1";
+            button1.Size = new Size(148, 155);
+            button1.TabIndex = 16;
+            button1.Text = "Ventes";
+            button1.TextAlign = ContentAlignment.BottomCenter;
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += click_vente;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -133,6 +149,7 @@
             BackgroundImage = Properties.Resources.victor_freitas_KkYWWpurqbE_unsplash;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1904, 1041);
+            Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(equipements);
             Controls.Add(products);
@@ -155,5 +172,6 @@
         private Button products;
         private Button equipements;
         private PictureBox pictureBox1;
+        private Button button1;
     }
 }

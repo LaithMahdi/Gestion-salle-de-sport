@@ -241,6 +241,7 @@
             groupBox1.Size = new Size(350, 545);
             groupBox1.TabIndex = 18;
             groupBox1.TabStop = false;
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // status
             // 

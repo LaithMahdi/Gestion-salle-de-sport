@@ -63,6 +63,26 @@ namespace gym_app.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ctrl_a_meal_replacement_03e4RajfFAE_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("ctrl-a-meal-replacement-03e4RajfFAE-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap geert_pieters_3RnkZpDqsEI_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("geert-pieters-3RnkZpDqsEI-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap left_arrow_10117587 {
             get {
                 object obj = ResourceManager.GetObject("left-arrow_10117587", resourceCulture);
@@ -106,6 +126,16 @@ namespace gym_app.Properties {
         internal static System.Drawing.Bitmap sven_mieke_Lx_GDv7VA9M_unsplash {
             get {
                 object obj = ResourceManager.GetObject("sven-mieke-Lx_GDv7VA9M-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sven_mieke_MsCgmHuirDo_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("sven-mieke-MsCgmHuirDo-unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

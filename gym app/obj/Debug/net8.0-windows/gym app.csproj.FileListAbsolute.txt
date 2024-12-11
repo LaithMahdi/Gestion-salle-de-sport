@@ -36,3 +36,6 @@ C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Form2.re
 C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Equipement.resources
 C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Coach.resources
 C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Membre.resources
+C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Course.resources
+C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Product.resources
+C:\Users\SBS\Documents\gym app\gym app\obj\Debug\net8.0-windows\gym_app.Vente.resources
