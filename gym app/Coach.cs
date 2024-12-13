@@ -75,11 +75,66 @@ namespace gym_app
             bool availability = statusCoach == "Disponible" ? true : false;
 
             // Validation des champs obligatoires
-            if (string.IsNullOrWhiteSpace(cinCoach) || string.IsNullOrWhiteSpace(lastnameCoach))
+            if (!Validator.IsNotEmpty(cinCoach))
             {
-                MessageBox.Show("Veuillez remplir tous les champs obligatoires.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("CIN est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            if (!Validator.IsValidCIN(cinCoach))
+            {
+                MessageBox.Show("CIN doit être un nombre de 8 chiffres.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(lastnameCoach))
+            {
+                MessageBox.Show("Nom est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(firstnameCoach))
+            {
+                MessageBox.Show("Prénom est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(emailCoach))
+            {
+                MessageBox.Show("Email est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsValidEmail(emailCoach))
+            {
+                MessageBox.Show("Email n'est pas valide.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(phoneCoach))
+            {
+                MessageBox.Show("Numéro de téléphone est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsValidPhoneNumber(phoneCoach))
+            {
+                MessageBox.Show("Numéro de téléphone doit être un nombre de 8 chiffres.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(specialityCoach))
+            {
+                MessageBox.Show("Spécialité est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(statusCoach))
+            {
+                MessageBox.Show("Statut est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
 
             if (isUpdateMode)
             {
@@ -224,6 +279,13 @@ namespace gym_app
             status.Text = "";
             button1.Text = "Create";
             button1.BackColor = Color.Green;
+        }
+
+  
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

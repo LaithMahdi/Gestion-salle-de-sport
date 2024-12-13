@@ -58,6 +58,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(408, 76);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 40;
             dataGridView1.Size = new Size(627, 545);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellClick += onCellClick;
@@ -150,7 +151,6 @@
             category.Name = "category";
             category.Size = new Size(313, 27);
             category.TabIndex = 10;
-            category.SelectedIndexChanged += category_SelectedIndexChanged;
             // 
             // label6
             // 
@@ -217,6 +217,7 @@
             button4.Size = new Size(43, 42);
             button4.TabIndex = 17;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // groupBox1
             // 
@@ -241,7 +242,6 @@
             groupBox1.Size = new Size(350, 545);
             groupBox1.TabIndex = 18;
             groupBox1.TabStop = false;
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // status
             // 
@@ -262,7 +262,6 @@
             text.Size = new Size(54, 21);
             text.TabIndex = 17;
             text.Text = "Status";
-            text.Click += label9_Click;
             // 
             // deliveryDate
             // 
@@ -297,7 +296,6 @@
             Controls.Add(dataGridView1);
             Name = "Equipement";
             Text = "Equipement";
-            Load += Equipement_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

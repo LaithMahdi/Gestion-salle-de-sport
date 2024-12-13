@@ -82,12 +82,58 @@ namespace gym_app
             string memberShipTimeMember = membershipTime.Text.Trim();
             string joinDateMember = joinDate.Value.ToString("yyyy-MM-dd");
 
-
-
-            // Validation des champs obligatoires
-            if (string.IsNullOrWhiteSpace(fullNameMember) || string.IsNullOrWhiteSpace(birthDateMember))
+            // Validation des champs
+            if (!Validator.IsNotEmpty(fullNameMember))
             {
-                MessageBox.Show("Veuillez remplir tous les champs obligatoires.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Veuillez remplir le nom complet.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(birthDateMember))
+            {
+                MessageBox.Show("Veuillez remplir la date de naissance.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(emailMember))
+            {
+                MessageBox.Show("Veuillez remplir l'email.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsValidEmail(emailMember))
+            {
+                MessageBox.Show("Veuillez remplir un email valide.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(phoneCoach))
+            {
+                MessageBox.Show("Veuillez remplir le numéro de téléphone.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsValidPhoneNumber(phoneCoach))
+            {
+                MessageBox.Show("Veuillez remplir un numéro de téléphone valide.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(genderMember))
+            {
+                MessageBox.Show("Veuillez remplir le genre.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(memberShipTimeMember))
+            {
+                MessageBox.Show("Veuillez remplir la durée de l'abonnement.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(joinDateMember))
+            {
+                MessageBox.Show("Veuillez remplir la date d'inscription.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -104,7 +150,7 @@ namespace gym_app
             LoadDataIntoGridView();
         }
 
-        private void addMembre(string fullName, string gender, string dateBirth, int phone, string email, string joinDate,string membershipTime,float price)
+        private void addMembre(string fullName, string gender, string dateBirth, int phone, string email, string joinDate, string membershipTime, float price)
         {
             string query = "INSERT INTO membre (full_name, gender, date_birth, phone, email, join_date,membership_time,price) " +
                            "VALUES (@full_name, @gender, @date_birth,@email, @phone, @join_date,@membership_time,@price)";
@@ -122,7 +168,7 @@ namespace gym_app
                         cmd.Parameters.AddWithValue("@phone", email);
                         cmd.Parameters.AddWithValue("@email", phone);
                         cmd.Parameters.AddWithValue("@join_date", joinDate);
-                        cmd.Parameters.AddWithValue("@membership_time",membershipTime );
+                        cmd.Parameters.AddWithValue("@membership_time", membershipTime);
                         cmd.Parameters.AddWithValue("@price", price);
 
 
@@ -285,7 +331,14 @@ namespace gym_app
             {
                 price.Text = (deflautPrice * 12).ToString();
             }
-            
+
+        }
+
+        
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

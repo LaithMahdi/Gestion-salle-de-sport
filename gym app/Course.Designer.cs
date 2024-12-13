@@ -80,6 +80,7 @@
             duration.Name = "duration";
             duration.Size = new Size(313, 23);
             duration.TabIndex = 18;
+            duration.Text = "30";
             // 
             // description
             // 
@@ -184,6 +185,7 @@
             button4.Size = new Size(43, 42);
             button4.TabIndex = 21;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // dataGridView1
             // 
@@ -195,7 +197,6 @@
             dataGridView1.Size = new Size(627, 458);
             dataGridView1.TabIndex = 2;
             dataGridView1.CellClick += onCellClick;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Course
             // 
@@ -210,7 +211,6 @@
             Controls.Add(dataGridView1);
             Name = "Course";
             Text = "Course";
-            Load += Course_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

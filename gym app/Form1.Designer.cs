@@ -49,7 +49,6 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             pictureBox1.WaitOnLoad = true;
-            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // groupBox1
             // 
@@ -64,7 +63,6 @@
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Login";
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // button1
             // 
@@ -110,7 +108,6 @@
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             pictureBox2.WaitOnLoad = true;
-            pictureBox2.Click += pictureBox1_Click_1;
             // 
             // Form1
             // 
@@ -123,7 +120,6 @@
             Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

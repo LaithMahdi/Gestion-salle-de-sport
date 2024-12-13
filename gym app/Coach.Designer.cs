@@ -259,12 +259,14 @@
             button4.Size = new Size(43, 42);
             button4.TabIndex = 21;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(424, 81);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 40;
             dataGridView1.Size = new Size(627, 545);
             dataGridView1.TabIndex = 20;
             dataGridView1.CellClick += onCellClick;

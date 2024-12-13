@@ -71,10 +71,16 @@ namespace gym_app
             string productQuantityText = quantity.Text.Trim();
             int promotionValue = promotion.Checked ? 1 : 0;
 
-            // Validate mandatory fields
-            if (string.IsNullOrWhiteSpace(productName) || string.IsNullOrWhiteSpace(productCategory))
+            // Validate required fields
+            if (!Validator.IsNotEmpty(productName))
             {
-                MessageBox.Show("Please fill in all required fields (Name and Category).", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter a product name.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!Validator.IsNotEmpty(productCategory))
+            {
+                MessageBox.Show("Please enter a product category.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -232,6 +238,11 @@ namespace gym_app
             isUpdateMode = false;
             button1.Text = "Create";
             button1.BackColor = Color.Green;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

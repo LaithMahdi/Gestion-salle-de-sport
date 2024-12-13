@@ -236,6 +236,7 @@
             button4.Size = new Size(43, 42);
             button4.TabIndex = 21;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // dataGridView1
             // 

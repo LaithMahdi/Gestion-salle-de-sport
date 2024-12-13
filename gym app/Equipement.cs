@@ -69,11 +69,32 @@ namespace gym_app
             string emplacementEquip = emplacement.Text.Trim();
 
             // Validation des champs obligatoires
-            if (string.IsNullOrWhiteSpace(equipementNameEuip) || string.IsNullOrWhiteSpace(categoryEquip))
+            if (!Validator.IsNotEmpty(equipementNameEuip))
             {
-                MessageBox.Show("Veuillez remplir tous les champs obligatoires.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show("Le nom de l'équipement est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error); return;
             }
+
+            if (!Validator.IsNotEmpty(descriptionEquip))
+            {
+                MessageBox.Show("La description de l'équipement est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error); return;
+            }
+
+            if (!Validator.IsNotEmpty(categoryEquip))
+            {
+                MessageBox.Show("La catégorie de l'équipement est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error); return;
+            }
+
+            if (!Validator.IsNotEmpty(statusEquip))
+            {
+                MessageBox.Show("Le statut de l'équipement est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error); return;
+            }
+
+            if (!Validator.IsNotEmpty(emplacementEquip))
+            {
+                MessageBox.Show("L'emplacement de l'équipement est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error); return;
+            }
+
+
 
             if (isUpdateMode)
             {
@@ -224,26 +245,9 @@ namespace gym_app
             button1.BackColor = Color.Green;
         }
 
-
-        private void Equipement_Load(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-        }
-
-
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void category_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            Close();
         }
     }
 }

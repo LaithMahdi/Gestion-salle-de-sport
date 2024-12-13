@@ -20,44 +20,28 @@ namespace gym_app
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string email = textBox1.Text;
             string password = textBox2.Text;
 
-            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            // Perform validations
+            if (!Validator.IsNotEmpty(email) || !Validator.IsNotEmpty(password))
             {
                 MessageBox.Show("Veuillez remplir tous les champs");
+                return;
+            }
+
+            if (!Validator.IsValidEmail(email))
+            {
+                MessageBox.Show("Veuillez saisir un email valide");
+                return;
+            }
+
+            if (!Validator.IsValidPassword(password))
+            {
+                MessageBox.Show("Le mot de passe doit contenir au moins 8 caractères");
                 return;
             }
 
@@ -68,9 +52,9 @@ namespace gym_app
 
                 // Create the query
                 string query = "SELECT * FROM user WHERE email = @Email AND password = @Password";
-          
                 MySqlCommand command = DatabaseConnection.GetConnection().CreateCommand();
                 command.CommandText = query;
+
                 // Add parameters
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Password", password);
@@ -86,10 +70,10 @@ namespace gym_app
                     MessageBox.Show($"Bienvenue {name}, Role: {role}");
 
                     // Navigate to Form2
-                    this.Hide(); 
+                    this.Hide();
                     Form2 form2 = new Form2();
-                    form2.ShowDialog(); 
-                    this.Close(); 
+                    form2.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
@@ -103,6 +87,7 @@ namespace gym_app
                 MessageBox.Show("Erreur lors de la connexion: " + ex.Message);
             }
         }
+
 
 
     }

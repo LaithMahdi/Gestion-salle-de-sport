@@ -11,7 +11,7 @@ namespace gym_app
         {
             if (connection == null)
             {
-                string connectionString = "server=127.0.0.1;user=root;database=projet_gym;password=";
+                string connectionString = DatabaseConfig.ConnectionString;
                 connection = new MySqlConnection(connectionString);
             }
 

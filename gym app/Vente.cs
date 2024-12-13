@@ -147,14 +147,25 @@ namespace gym_app
                 DataRowView selectedRow = product.SelectedItem as DataRowView;
                 if (selectedRow != null)
                 {
-                    selectedProductPrice = Convert.ToDouble(selectedRow["price"]);
-                    price.Text = selectedProductPrice.ToString();
+                    // Check if the price is DBNull
+                    if (selectedRow["price"] != DBNull.Value)
+                    {
+                        selectedProductPrice = Convert.ToDouble(selectedRow["price"]);
+                        price.Text = selectedProductPrice.ToString();
+                    }
+                    else
+                    {
+                        // Handle case where price is DBNull (e.g., set a default value)
+                        selectedProductPrice = 0;
+                        price.Text = "0.00";
+                    }
 
                     // Recalculate the total price based on the current quantity
                     UpdateTotalPrice();
                 }
             }
         }
+
 
         private void Quantity_TextChanged(object sender, EventArgs e)
         {
@@ -266,7 +277,17 @@ namespace gym_app
             quantity.Text = "1";
             selectedProductPrice = 0;
             price.Text = "0.00";
-            
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void id_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

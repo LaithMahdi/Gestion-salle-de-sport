@@ -120,7 +120,7 @@
             button3.TabIndex = 16;
             button3.Text = "Reset";
             button3.UseVisualStyleBackColor = false;
-            button3.Click += this.button2_Click;
+            button3.Click += button2_Click;
             // 
             // button1
             // 
@@ -133,7 +133,7 @@
             button1.TabIndex = 14;
             button1.Text = "Create";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += this.button1_Click;
+            button1.Click += button1_Click;
             // 
             // id
             // 
@@ -144,6 +144,7 @@
             id.ReadOnly = true;
             id.Size = new Size(313, 27);
             id.TabIndex = 3;
+            id.TextChanged += id_TextChanged;
             // 
             // label3
             // 
@@ -213,6 +214,7 @@
             button4.Size = new Size(43, 42);
             button4.TabIndex = 21;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // dataGridView1
             // 

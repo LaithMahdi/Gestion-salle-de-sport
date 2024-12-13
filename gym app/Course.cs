@@ -1,14 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace gym_app
 {
@@ -70,12 +62,34 @@ namespace gym_app
             string courseDescription = description.Text.Trim();
             int courseDuration = int.Parse(duration.Text.Trim());
 
-            // Validation des champs obligatoires
-            if (string.IsNullOrWhiteSpace(courseName) || string.IsNullOrWhiteSpace(courseDescription))
+            //Validation des champs obligatoires
+            if (!Validator.IsNotEmpty(courseName))
             {
-                MessageBox.Show("Veuillez remplir tous les champs obligatoires.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Le nom du cours est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            if (!Validator.IsNotEmpty(courseDescription))
+            {
+                MessageBox.Show("La description du cours est obligatoire.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!Validator.IsValidNumber(duration.Text.Trim()))
+            {
+                MessageBox.Show("La durée du cours doit être un nombre.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            //if (courseDuration <= 0)
+            if (int.Parse(duration.Text.Trim()) <= 0)
+            {
+                MessageBox.Show("La durée du cours doit être supérieure à 0.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+
 
             if (isUpdateMode)
             {
@@ -210,16 +224,9 @@ namespace gym_app
             button1.BackColor = Color.Green;
         }
 
-
-
-        private void Course_Load(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            Close();
         }
     }
 }
